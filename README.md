@@ -35,7 +35,7 @@ Pages redeploys in about a minute.
     check (person_id in ('martin','viktor', ... ,'newperson'));
   ```
 - `DAYS` — dates, day labels, soup, main dish, note. `eatout: true` renders the
-  restaurant card with no soup line.
+  restaurant card with no soup line; add `url:` to make the dish name a link.
 
 ## Afterwards
 
