@@ -250,7 +250,7 @@ footer .cook{color:var(--faint); font-size:11.5px}
 
   function render(force){
     if(!force && pressing){ renderQueued=true; return; }
-    var s=me ? JSON.stringify([me,offline,saving,votes]) : "gate";
+    var s=me ? JSON.stringify([me,offline,votes]) : "gate";  // saving text is patched in place, never a reason to rebuild the DOM
     if(!force && s===lastSig) return;
     lastSig=s;
     if(!me){ renderGate(); return; }
